@@ -73,7 +73,7 @@ services:
       - elastic
     configs:
       - source: ls_config
-        target: /home/centos/docker-elastic/elk/logstash/config/pipeline/logstash.conf
+        target: /home/centos/Swarm/docker-elastic/elk/logstash/config/pipeline/logstash.conf
 
   kibana:
     image: docker.elastic.co/kibana/kibana:${ELASTIC_VERSION:-6.5.0}
@@ -105,4 +105,4 @@ volumes:
 
 configs:
   ls_config:
-    file: /home/centos/docker-elastic/elk/logstash/config/pipeline/logstash.conf
+    file: /home/centos/Swarm/docker-elastic/elk/logstash/config/pipeline/logstash.conf
